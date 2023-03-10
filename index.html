@@ -5,8 +5,281 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <style>
+        /* Here’s the CSS reset */
+        html {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        *, *:before, *:after {
+            font-family: 'Muli';
+            box-sizing: inherit;
+        }
+
+        body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* containers */
+        .container,
+        .container-fluid,
+        .container-xxl,
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+        margin-right: auto;
+        margin-left: auto;
+        }
+        @media (min-width: 576px) {
+            .container-sm, .container {
+                max-width: 540px;
+            }
+        }
+        @media (min-width: 768px) {
+            .container-md, .container-sm, .container {
+                max-width: 720px;
+            }
+        }
+        @media (min-width: 992px) {
+            .container-lg, .container-md, .container-sm, .container {
+                max-width: 960px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container-xl, .container-lg, .container-md, .container-sm, .container {
+                max-width: 1140px;
+            }
+        }
+        @media (min-width: 1400px) {
+            .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+                max-width: 1320px;
+            }
+        }
+
+        /* Here goes CSS */
+        .logo{
+            text-align: center;
+            margin: 10px 0;
+        }
+        .logo1{
+            width: 130px;
+        }
+        .logo2{
+            width: 350px;
+        }
+        .paragraph{
+            font-size: 10pt;
+            line-height: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .quote{
+            background-color: #F2F2F2;
+            border-radius: 5px;
+            padding: 20px 40px;
+        }
+        .quote span{
+            font-weight: 900;
+        }
+        .quote p:nth-child(1){
+            margin-bottom: 10px;
+        }
+
+
+        .block{
+            margin-bottom: 40px;
+        }
+        .block h3{
+            font-weight: 900;
+            font-size: 24pt;
+            margin-bottom: 20px;
+        }
+        .block .products {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 15px;
+        }
+        .block .products .product{
+            max-width: 300px;
+            width: 33%;
+            text-align: center;
+        }
+
+        .block .products .product img{
+            width: 300px;
+        }
+        .block .products .product .title{
+            font-weight: 900;
+            font-size: 12pt;
+            font-style: italic;
+            text-align: start;
+        }
+        .block .products .product .subtitle{
+            font-size: 12pt;
+            font-weight: 300;
+            margin-bottom: 15px;
+            text-align: start;
+        }
+        .block .products .product .description{
+            font-size: 12pt;
+            font-weight: 400;
+            margin-bottom: 30px;
+            text-align: start;
+        }
+        .block .products .product .button{
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 12pt;
+            background-color: #000;
+            color: #fff;
+            font-weight: 300;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .end{
+            font-size: 12pt;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Scripts -->
+    <script src="https://mc3z2jh3b-f5d8jhc0qz4lv-f-s1.pub.sfmc-content.com/auivixbwekd"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
-    Hello world
+<body class="container">
+    <div class="logo">
+        <img class="logo1" src="./logo.png" alt="">
+    </div>
+    <div class="paragraph">
+        <p>Kelly, let's enhance your beauty</p>
+        <p>thanks to your Morpho Beauty consultation!</p>
+    </div>
+    <div class="quote paragraph">
+        <p>Your face shape: <span>Inverted Triangle</span></p>
+        <p>Your forehead is the widest part of your face. You have a slender jawline and cheekbones. The lower part is more or less pointy</p>
+    </div>
+    <div class="logo">
+        <img class="logo2" src="logo2.png" alt="">
+    </div>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse recusandae numquam, vitae pariatur porro dolorum repellendus quae possimus minima nemo sequi, ad, unde optio!</p>
+
+
+    <div class="block">
+        <h3>Complexion</h3>
+        <div class="products owl-carousel owl-theme">
+            <div class="product">
+                <img src="https://www.makeupforever.com/dw/image/v2/BCRL_PRD/on/demandware.static/-/Sites-Makeupforever_master_catalog/default/dwf8080216/images/I000022800/3548752174312_I000022800_STEP-1-PRIMER-SHINE-CONTROL_FACE_0.png?sw=300&sh=300" alt="product" />
+                <p class="title">Step 1 primer Pore minimizer</p>
+                <p class="subtitle"> SMOOTHING Base</p>
+                <div class="description">Prepare the skin with primer pore minimizer to instantly reduce pores. blur fine fine lines and maintain a smooth skin. it will help optimize the makeup hold</div>
+                <a href="#" class="button">Discover</a>
+            </div>
+            <div class="product">
+                <img src="	https://www.makeupforever.com/dw/image/v2/BCRL_PRD/on/demandware.static/-/Sites-Makeupforever_master_catalog/default/dwb652a110/images/I000034208/3548752175470_I000034208_WATERTONEFOUNDATION40MLR208_Face_0.jpg?sw=300&sh=300" alt="product" />
+                <p class="title">Step 1 primer Pore minimizer</p>
+                <p class="subtitle"> SMOOTHING Base</p>
+                <div class="description">Prepare the skin with primer pore minimizer to instantly reduce pores. blur fine fine lines and maintain a smooth skin. it will help optimize the makeup hold</div>
+                <a href="#" class="button">Discover</a>
+            </div>
+            <div class="product">
+                <img src="https://www.makeupforever.com/dw/image/v2/BCRL_PRD/on/demandware.static/-/Sites-Makeupforever_master_catalog/default/dw5ab32db6/images/I000031032/3548752139175_I000031032_packshot_closed_ultrahdconcealer_32_Face_0.png?sw=300&sh=300" alt="product" />
+                <p class="title">Step 1 primer Pore minimizer</p>
+                <p class="subtitle"> SMOOTHING Base</p>
+                <div class="description">Prepare the skin with primer pore minimizer to instantly reduce pores. blur fine fine lines and maintain a smooth skin. it will help optimize the makeup hold</div>
+                <a href="#" class="button">Discover</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="block">
+        <h3>Contouring</h3>
+        <div class="products">
+            <div class="product">
+                <img src="https://www.makeupforever.com/dw/image/v2/BCRL_PRD/on/demandware.static/-/Sites-Makeupforever_master_catalog/default/dwf38bac9f/images/I000031032/3548752139175_I000031032_ULTRA-HD-CONCEALER-19-5ML-32_Face_0.png?sw=300&sh=300" alt="product" />
+                <p class="title">Step 1 primer Pore minimizer</p>
+                <p class="subtitle"> SMOOTHING Base</p>
+                <div class="description">Prepare the skin with primer pore minimizer to instantly reduce pores. blur fine fine lines and maintain a smooth skin. it will help optimize the makeup hold</div>
+                <a href="#" class="button">Discover</a>
+            </div>
+            <div class="product">
+                <img src="https://www.makeupforever.com/dw/image/v2/BCRL_PRD/on/demandware.static/-/Sites-Makeupforever_master_catalog/default/dw1e815284/images/I000022802/3548752174336_I000022802_STEP-1-PRIMER-HYDRA-BOOSTER_FACE_0.png?sw=300&sh=300" alt="product" />
+                <p class="title">Step 1 primer Pore minimizer</p>
+                <p class="subtitle"> SMOOTHING Base</p>
+                <div class="description">Prepare the skin with primer pore minimizer to instantly reduce pores. blur fine fine lines and maintain a smooth skin. it will help optimize the makeup hold</div>
+                <a href="#" class="button">Discover</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="block">
+        <h3>Finishing</h3>
+        <div class="products">
+            <div class="product">
+                <img src="https://www.makeupforever.com/dw/image/v2/BCRL_PRD/on/demandware.static/-/Sites-Makeupforever_master_catalog/default/dw35e13bd5/images/I000075100/3548752185158_I000075100_HD-SKIN-FOUNDATION-22-30ML-1N00_Face_0.png?sw=300&sh=300" alt="product" />
+                <p class="title">Step 1 primer Pore minimizer</p>
+                <p class="subtitle"> SMOOTHING Base</p>
+                <div class="description">Prepare the skin with primer pore minimizer to instantly reduce pores. blur fine fine lines and maintain a smooth skin. it will help optimize the makeup hold</div>
+                <a href="#" class="button">Discover</a>
+            </div>
+            <div class="product">
+                <img src="https://www.makeupforever.com/dw/image/v2/BCRL_PRD/on/demandware.static/-/Sites-Makeupforever_master_catalog/default/dwef2c4eaa/images/59106/3548752061612_59106_pinceaufonddeteint106_Face_0.png?sw=300&sh=300	" alt="product" />
+                <p class="title">Step 1 primer Pore minimizer</p>
+                <p class="subtitle"> SMOOTHING Base</p>
+                <div class="description">Prepare the skin with primer pore minimizer to instantly reduce pores. blur fine fine lines and maintain a smooth skin. it will help optimize the makeup hold</div>
+                <a href="#" class="button">Discover</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="paragraph end">Now that you've discovered our pro tips & tricks to enhance your beauty, we can't wait to see your incredible makeup looks!</p>
+    
+    <script> 
+        // $(document).ready(function() { 
+        //         $('.owl-carousel').owlCarousel({
+        //         loop:false,
+        //         margin:10,
+        //         nav:true,
+        //         responsive:{
+        //             0:{
+        //                 items:2
+        //             },
+        //             600:{
+        //                 items:3
+        //             },
+        //         }
+        //     })
+        // });
+    </script>
 </body>
 </html>
