@@ -128,8 +128,8 @@
         }
         .block .products .product{
             max-width: 300px;
-            width: 33%;
             text-align: center;
+            margin: 0 auto;
         }
 
         .block .products .product img{
@@ -179,7 +179,7 @@
 </head>
 <body class="container">
     <div class="logo">
-        <img class="logo1" src="./logo.png" alt="">
+        <img class="logo1" src="https://image.probeauty.makeupforever.com/lib/fe8b1373776c0c7c72/m/2/12cfad09-ab97-4b55-8d37-3a4a7fe83e81.png" alt="">
     </div>
     <div class="paragraph">
         <p>Kelly, let's enhance your beauty</p>
@@ -190,7 +190,7 @@
         <p>Your forehead is the widest part of your face. You have a slender jawline and cheekbones. The lower part is more or less pointy</p>
     </div>
     <div class="logo">
-        <img class="logo2" src="logo2.png" alt="">
+        <img class="logo2" src="https://image.probeauty.makeupforever.com/lib/fe8b1373776c0c7c72/m/2/c7e415e4-4f79-4163-8134-d5f5e48a7ce7.png" alt="">
     </div>
     <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse recusandae numquam, vitae pariatur porro dolorum repellendus quae possimus minima nemo sequi, ad, unde optio!</p>
 
@@ -268,13 +268,14 @@
         $(document).ready(function() { 
                 $('.owl-carousel').owlCarousel({
                 loop:false,
-                margin:10,
-                nav:true,
+                nav:false,
+                // info
+                dots:false,
                 responsive:{
                     0:{
                         items:2
                     },
-                    600:{
+                    992:{
                         items:3
                     },
                 }
